@@ -1,10 +1,9 @@
 import React from 'react'
+import MainPageLayout from '../components/MainPageLayout'
 
 const Lock = () => {
   return (
-    <div>
-      <h1>This is locked page</h1>
-    </div>
+      <MainPageLayout>This is locked page</MainPageLayout>
   )
 }
 
