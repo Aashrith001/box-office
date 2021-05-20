@@ -1,7 +1,8 @@
 import React from 'react';
 import { Switch, Route } from 'react-router-dom';
 import Home from './pages/Home';
-import Lock from './pages/Lock';
+import Starred from './pages/Starred';
+import Show from './pages/Show'
 
 function App() {
   return (
@@ -9,8 +10,11 @@ function App() {
         <Route path="/" exact>
           <Home />
         </Route>
-        <Route path="/lock" exact>
-          <Lock />
+        <Route path="/starred" exact>
+          <Starred />
+        </Route>
+        <Route path="/show/:id" exact>
+          <Show />
         </Route>
         <Route>
           <h1>Error 404</h1>
